@@ -1,0 +1,38 @@
+.box-container {
+    position: absolute;
+    width: 960px;
+    height: 600px;
+    outline: 1px solid black;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+
+    span:first-of-type {
+        position: absolute;
+        left: 50%;
+        transform: translate3d(-50%, -100%, 0);
+    }
+
+    span:nth-of-type(2) {
+        position: absolute;
+        top: 50%;
+        transform: translate3d(-100%, -50%, 0);
+    }
+
+    button {
+        position: absolute;
+        top: 2%;
+        right: 2%;
+
+        cursor: pointer;
+        background-color: #555555;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        letter-spacing: 0.7px;
+    }
+}

@@ -1,0 +1,20 @@
+<!-- <div>{{recWidth}} x {{recHeight}}</div>
+
+<div style="width: '{{recWidth}}'; resize: both; overflow: auto;">
+  <svg [style.width]='recWidth' [style.height]='recHeight'>
+    <rect [style.width]='recWidth' [style.height]='recHeight' fill="white" stroke="red" />
+  </svg>
+</div> -->
+
+
+<div class="box-container">
+  <span>960px</span>
+  <span>600px</span>
+
+  <app-resizable-draggable [width]="resizeWidth" [height]="resizeHeight" [left]="positionLeft" [top]="positionTop"
+    (updatedWidth)="addWidth($event)" (updatedHeight)="addHeight($event)" (updatedLeft)="addLeft($event)"
+    (updatedTop)="addTop($event)">
+  </app-resizable-draggable>
+
+  <button type="button" (click)="updateJsonFile()">Update Perimeters</button>
+</div>
